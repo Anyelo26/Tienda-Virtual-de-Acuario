@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+	
+<!--################################################################################-->
+<!--#################....................ROLE............###########################-->
+<!--################################################################################-->
+<!--.................  ROLE CREATE ................. -->
+	<servlet>
+		<servlet-name>RoleCreate</servlet-name>
+		<servlet-class>controller.role.CreateRole</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleCreate</servlet-name>
+		<url-pattern>/RoleCreatePersistent</url-pattern>
+	</servlet-mapping>
+	
+<!--................. ROLE DISPLAY .....................-->
+	<servlet>
+		<servlet-name>RoleDisplay</servlet-name>
+		<servlet-class>controller.role.DisplayRoles</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleDisplay</servlet-name>
+		<url-pattern>/Role/Display</url-pattern>
+	</servlet-mapping>
+<!--.................ROLE CREATE REDIRECT ................-->
+	<servlet>
+		<servlet-name>RoleCreateRedirect</servlet-name>
+		<servlet-class>controller.role.CreateRoleRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleCreateRedirect</servlet-name>
+		<url-pattern>/Role/Create</url-pattern>
+	</servlet-mapping>
+<!--.................  ROLE DELETE................. -->
+	<servlet>
+		<servlet-name>RoleDelete</servlet-name>
+		<servlet-class>controller.role.DeleteRole</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleDelete</servlet-name>
+		<url-pattern>/Role/Delete</url-pattern>
+	</servlet-mapping>
+<!--.................  ROLE UPDATE ................. -->
+	<servlet>
+		<servlet-name>RoleUpdate</servlet-name>
+		<servlet-class>controller.role.UpdateRole</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleUpdate</servlet-name>
+		<url-pattern>/Role/Update</url-pattern>
+	</servlet-mapping>
+
+<!--.................  ROLE READ ................. -->
+	<servlet>
+		<servlet-name>RoleRead</servlet-name>
+		<servlet-class>controller.role.ReadRole</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RoleRead</servlet-name>
+		<url-pattern>/Role/Read</url-pattern>
+	</servlet-mapping>
+<!--################################################################################-->
+<!--#################....................PRODUCTO............###########################-->
+<!--################################################################################-->
+<!--.................  ROLE CREATE ................. -->
+	<servlet>
+		<servlet-name>ProductCreate</servlet-name>
+		<servlet-class>controller.producto.CreateProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductCreate</servlet-name>
+		<url-pattern>/ProductCreatePersistent</url-pattern>
+	</servlet-mapping>
+	
+<!--................. ROLE DISPLAY .....................-->
+	<servlet>
+		<servlet-name>ProductDisplay</servlet-name>
+		<servlet-class>controller.producto.DisplayProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductDisplay</servlet-name>
+		<url-pattern>/Product/Display</url-pattern>
+	</servlet-mapping>
+<!--.................ROLE CREATE REDIRECT ................-->
+	<servlet>
+		<servlet-name>ProductCreateRedirect</servlet-name>
+		<servlet-class>controller.producto.CreateProductRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductCreateRedirect</servlet-name>
+		<url-pattern>/Product/Create</url-pattern>
+	</servlet-mapping>
+<!--.................  ROLE DELETE................. -->
+	<servlet>
+		<servlet-name>ProductDelete</servlet-name>
+		<servlet-class>controller.producto.DeleteProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductDelete</servlet-name>
+		<url-pattern>/Product/Delete</url-pattern>
+	</servlet-mapping>
+<!--.................  ROLE UPDATE ................. -->
+	<servlet>
+		<servlet-name>ProductUpdate</servlet-name>
+		<servlet-class>controller.producto.UpdateProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductUpdate</servlet-name>
+		<url-pattern>/Product/Update</url-pattern>
+	</servlet-mapping>
+
+<!--.................  ROLE READ ................. -->
+	<servlet>
+		<servlet-name>ProductRead</servlet-name>
+		<servlet-class>controller.producto.ReadProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductRead</servlet-name>
+		<url-pattern>/Product/Read</url-pattern>
+	</servlet-mapping>
+
+<!--################################################################################-->
+<!--#################.................RESOURCE.................#########################-->
+<!--################################################################################-->
+
+<!--.................  RESOURCE CREATE ................. -->
+	<servlet>
+		<servlet-name>ResourceCreate</servlet-name>
+		<servlet-class>controller.resource.CreateResource</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceCreate</servlet-name>
+		<url-pattern>/ResourceCreatePersistent</url-pattern>
+	</servlet-mapping>
+	
+<!--................. RESOURCE DISPLAY .....................-->
+	<servlet>
+		<servlet-name>ResourceDisplay</servlet-name>
+		<servlet-class>controller.resource.DisplayResource</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceDisplay</servlet-name>
+		<url-pattern>/Resource/Display</url-pattern>
+	</servlet-mapping>
+<!--.................RESOURCE CREATE REDIRECT ................-->
+	<servlet>
+		<servlet-name>ResourceCreateRedirect</servlet-name>
+		<servlet-class>controller.resource.CreateResourceRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceCreateRedirect</servlet-name>
+		<url-pattern>/Resource/Create</url-pattern>
+	</servlet-mapping>
+<!--.................  RESOURCE DELETE................. -->
+	<servlet>
+		<servlet-name>ResourceDelete</servlet-name>
+		<servlet-class>controller.resource.DeleteResource</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceDelete</servlet-name>
+		<url-pattern>/Resource/Delete</url-pattern>
+	</servlet-mapping>
+<!--.................  RESOURCE UPDATE ................. -->
+	<servlet>
+		<servlet-name>ResourceUpdate</servlet-name>
+		<servlet-class>controller.resource.UpdateResource</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceUpdate</servlet-name>
+		<url-pattern>/Resource/Update</url-pattern>
+	</servlet-mapping>
+
+<!--.................  RESOURCE READ ................. -->
+	<servlet>
+		<servlet-name>ResourceRead</servlet-name>
+		<servlet-class>controller.resource.ReadResource</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResourceRead</servlet-name>
+		<url-pattern>/Resource/Read</url-pattern>
+	</servlet-mapping>
+
+<!--################################################################################-->
+<!--################################################################################-->
+<!--################################################################################-->
+
+
+<!--################################################################################-->
+<!--#################.................USER.................#########################-->
+<!--################################################################################-->
+
+<!--.................  USER CREATE ................. -->
+	<servlet>
+		<servlet-name>UserCreate</servlet-name>
+		<servlet-class>controller.user.CreateUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserCreate</servlet-name>
+		<url-pattern>/UserCreatePersistent</url-pattern>
+	</servlet-mapping>
+	
+<!--................. USER DISPLAY .....................-->
+	<servlet>
+		<servlet-name>UserDisplay</servlet-name>
+		<servlet-class>controller.user.DisplayUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserDisplay</servlet-name>
+		<url-pattern>/User/Display</url-pattern>
+	</servlet-mapping>
+<!--.................USER CREATE REDIRECT ................-->
+	<servlet>
+		<servlet-name>UserCreateRedirect</servlet-name>
+		<servlet-class>controller.user.CreateUserRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserCreateRedirect</servlet-name>
+		<url-pattern>/User/Create</url-pattern>
+	</servlet-mapping>
+<!--.................  USER DELETE................. -->
+	<servlet>
+		<servlet-name>UserDelete</servlet-name>
+		<servlet-class>controller.user.DeleteUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserDelete</servlet-name>
+		<url-pattern>/User/Delete</url-pattern>
+	</servlet-mapping>
+	<!--.................  USERS DELETE................. -->
+	<servlet>
+		<servlet-name>UsersDelete</servlet-name>
+		<servlet-class>controller.user.DeleteUsers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UsersDelete</servlet-name>
+		<url-pattern>/UsersDelete</url-pattern>
+	</servlet-mapping>
+<!--.................  USER UPDATE ................. -->
+	<servlet>
+		<servlet-name>UserUpdate</servlet-name>
+		<servlet-class>controller.user.UpdateUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserUpdate</servlet-name>
+		<url-pattern>/User/Update</url-pattern>
+	</servlet-mapping>
+
+<!--.................  USER READ ................. -->
+	<servlet>
+		<servlet-name>UserRead</servlet-name>
+		<servlet-class>controller.user.ReadUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserRead</servlet-name>
+		<url-pattern>/User/Read</url-pattern>
+	</servlet-mapping>
+<!--.................  USER LOGIN ................. -->
+	<servlet>
+		<servlet-name>UserLogin</servlet-name>
+		<servlet-class>controller.user.LoginUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserLogin</servlet-name>
+		<url-pattern>/UserLogin</url-pattern>
+	</servlet-mapping>
+<!--.................  USER LOGOUT................. -->
+	<servlet>
+		<servlet-name>UserLogout</servlet-name>
+		<servlet-class>controller.user.LogoutUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserLogout</servlet-name>
+		<url-pattern>/UserLogout</url-pattern>
+	</servlet-mapping>
+	<!--.................  LOGOUT................. -->
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>controller.user.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	
+	<!--.................  USER REGISTER................. -->
+	<servlet>
+		<servlet-name>RegisterGoogleUser</servlet-name>
+		<servlet-class>controller.user.RegisterGoogleUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterGoogleUser</servlet-name>
+		<url-pattern>/User/Register</url-pattern>
+	</servlet-mapping>
+<!--################################################################################-->
+<!--################################################################################-->
+<!--################################################################################-->
+
+
+<!--################################################################################-->
+<!--#################.................ACCESS.................#########################-->
+<!--################################################################################-->
+
+<!--.................  ACCESS CREATE ................. -->
+	<servlet>
+		<servlet-name>AccessCreate</servlet-name>
+		<servlet-class>controller.access.CreateAccess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessCreate</servlet-name>
+		<url-pattern>/AccessCreatePersistent</url-pattern>
+	</servlet-mapping>
+	
+<!--................. ACCESS DISPLAY .....................-->
+	<servlet>
+		<servlet-name>AccessDisplay</servlet-name>
+		<servlet-class>controller.access.DisplayAccess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessDisplay</servlet-name>
+		<url-pattern>/Access/Display</url-pattern>
+	</servlet-mapping>
+<!--.................ACCESS CREATE REDIRECT ................-->
+	<servlet>
+		<servlet-name>AccessCreateRedirect</servlet-name>
+		<servlet-class>controller.access.CreateAccessRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessCreateRedirect</servlet-name>
+		<url-pattern>/Access/Create</url-pattern>
+	</servlet-mapping>
+<!--.................  ACCESS DELETE................. -->
+	<servlet>
+		<servlet-name>AccessDelete</servlet-name>
+		<servlet-class>controller.access.DeleteAccess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessDelete</servlet-name>
+		<url-pattern>/Access/Delete</url-pattern>
+	</servlet-mapping>
+<!--.................  ACCESS UPDATE ................. -->
+	<servlet>
+		<servlet-name>AccessUpdate</servlet-name>
+		<servlet-class>controller.access.UpdateAccess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessUpdate</servlet-name>
+		<url-pattern>/Access/Update</url-pattern>
+	</servlet-mapping>
+
+<!--.................  ACCESS READ ................. -->
+	<servlet>
+		<servlet-name>AccessRead</servlet-name>
+		<servlet-class>controller.access.ReadAccess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccessRead</servlet-name>
+		<url-pattern>/Access/Read</url-pattern>
+	</servlet-mapping>
+
+<!--################################################################################-->
+<!--################################################################################-->
+<!--################################################################################-->
+	
+<!--################################################################################-->
+<!--#####################................PEZ..............###########################-->
+<!--################################################################################-->
+	
+	
+<servlet>
+
+<servlet-name>CreatePez</servlet-name>
+
+<servlet-class>controller.pez.CreatePez</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>CreatePez</servlet-name>
+
+<url-pattern>/peces/add</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+
+<servlet-name>DeletePez</servlet-name>
+
+<servlet-class>controller.pez.DeletePez</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>DeletePez</servlet-name>
+
+<url-pattern>/peces/delete</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+
+<servlet-name>PezDisplay</servlet-name>
+
+<servlet-class>controller.pez.PezDisplay</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>PezDisplay</servlet-name>
+
+<url-pattern>/peces/view</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+
+<servlet-name>PezLookup</servlet-name>
+
+<servlet-class>controller.pez.PezLookup</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>PezLookup</servlet-name>
+
+<url-pattern>/peces</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+
+<servlet-name>UpdatePez</servlet-name>
+
+<servlet-class>controller.pez.UpdatePez</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>UpdatePez</servlet-name>
+
+<url-pattern>/peces/update</url-pattern>
+
+</servlet-mapping>
+	
+
+<!--################################################################################-->
+<!--################################################################################-->
+<!--################################################################################-->	
+	
+
+<!--################################################################################-->
+<!--########################...........FORO.............########################-->
+<!--################################################################################-->		
+	
+<servlet>
+
+<servlet-name>Lab08_Foro</servlet-name>
+
+<servlet-class>controller.foro.controllerForo</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>Lab08_Foro</servlet-name>
+
+<url-pattern>/lab08_foro</url-pattern>
+
+</servlet-mapping>
+
+<!--################################################################################-->
+<!--################################################################################-->
+<!--################################################################################-->	
+	
+
+<!--################################################################################-->
+<!--########################...........RECOMENDACIONES.............########################-->
+<!--################################################################################-->		
+
+<servlet>
+
+<servlet-name>RecomendacionesControllerAdd</servlet-name>
+
+<servlet-class>controller.recomendaciones.RecomendacionesControllerAdd</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>RecomendacionesControllerAdd</servlet-name>
+
+<url-pattern>/Recomendaciones/Add</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+
+<servlet-name>RecomendacionesControllerDelete</servlet-name>
+
+<servlet-class>controller.recomendaciones.RecomendacionesControllerDelete</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>RecomendacionesControllerDelete</servlet-name>
+
+<url-pattern>/Recomendaciones/Delete</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+
+<servlet-name>RecomendacionesControllerEdit</servlet-name>
+
+<servlet-class>controller.recomendaciones.RecomendacionesControllerEdit</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>RecomendacionesControllerEdit</servlet-name>
+
+<url-pattern>/Recomendaciones/Edit</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+
+<servlet-name>RecomendacionesControllerIndex</servlet-name>
+
+<servlet-class>controller.recomendaciones.RecomendacionesControllerIndex</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>RecomendacionesControllerIndex</servlet-name>
+
+<url-pattern>/Recomendaciones</url-pattern>
+
+</servlet-mapping>
+
+
+<servlet>
+
+<servlet-name>RecomendacionesControllerView</servlet-name>
+
+<servlet-class>controller.recomendaciones.RecomendacionesControllerView</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>RecomendacionesControllerView</servlet-name>
+
+<url-pattern>/Recomendaciones/View</url-pattern>
+
+</servlet-mapping>
+<!--.................  CLIENTE DELETE ................. -->
+	<servlet>
+		<servlet-name>ClientesDelete</servlet-name>
+		<servlet-class>controller.cliente.ClienteControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientesDelete</servlet-name>
+		<url-pattern>/Clientes/Delete</url-pattern>
+	</servlet-mapping>
+	
+	<!--.................  CLIENTE EDIT ................. -->
+	<servlet>
+		<servlet-name>ClientesEdit</servlet-name>
+		<servlet-class>controller.cliente.ClienteControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientesEdit</servlet-name>
+		<url-pattern>/Clientes/Edit</url-pattern>
+	</servlet-mapping>
+	
+	<!--.................  CLIENTE INDEX ................. -->
+	<servlet>
+		<servlet-name>ClientesIndex</servlet-name>
+		<servlet-class>controller.cliente.ClienteControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientesIndex</servlet-name>
+		<url-pattern>/Clientes</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--.................  JAULA ADD ................. -->
+	<servlet>
+		<servlet-name>JaulaAdd</servlet-name>
+		<servlet-class>controller.jaula.JaulaControllerAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JaulaAdd</servlet-name>
+		<url-pattern>/Jaulas/Add</url-pattern>
+	</servlet-mapping>
+	
+	<!--.................  JAULA DELETE ................. -->
+	<servlet>
+		<servlet-name>JaulaDelete</servlet-name>
+		<servlet-class>controller.jaula.JaulaControllerDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JaulaDelete</servlet-name>
+		<url-pattern>/Jaulas/Delete</url-pattern>
+	</servlet-mapping>
+	
+	<!--.................  JAULA Edit ................. -->
+	<servlet>
+		<servlet-name>JaulaEdit</servlet-name>
+		<servlet-class>controller.jaula.JaulaControllerEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JaulaEdit</servlet-name>
+		<url-pattern>/Jaulas/Edit</url-pattern>
+	</servlet-mapping>
+	
+	<!--.................  JAULA INDEX ................. -->
+	<servlet>
+		<servlet-name>JaulaIndex</servlet-name>
+		<servlet-class>controller.jaula.JaulaControllerIndex</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JaulaIndex</servlet-name>
+		<url-pattern>/Jaulas</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
